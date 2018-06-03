@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia Reloaded</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+
+    <div id="encabezado">
+     <h1>Atínale al candidato</h1>
+     <h3>La trivia más divertida hasta que el INE haga de las suyas</h3>
+    </div>
+    <!--Preguntando nombre-->
+    <div id="preguntaNombre">
+      <p>Ingresa tu nombre</p>
+    <input  type="text" name="nombreUsuario" value="" id="nombreUsuario">
+    <input type="button" name="enviar" value="Enviar" onclick="bienvenida()">
+    </div>
+    <!--Pintando bienvenida + nombre-->
+  <p id="bienvenida"></p>
+  <p id="hastaPronto"></p>
+
+<section id="comenzarJuego">
+  <p>¿Deseas Jugar?</p>
+  <input type="button" name="si" value="Sí" onclick="si()">
+  <input type="button" name="no" value="No" onclick="no()">
+</section>
+
+
+<section id= "Preguntas">
+<div class="pregunta1">
+  <p>P1.¿Quién se ha postulado por tercera vez a la presidencia?</p>
+  <form name="newForm">
+    <input type="radio" name="P1" value="a">AMLOVE<br>
+    <input type="radio" name="P1" value="b">Vicente Fox<br>
+    <input type="radio" name="P1" value="c">Carmelita Salinas<br>
+</div>
+
+<div class="pregunta2">
+ <p>P2.Si vendieras prótesis para manos ¿por quién votarías?</p>
+ <input type="radio" name="P2" value="a">Vicente Fernández<br>
+ <input type="radio" name="P2" value="b">Alejandro Fernández<br>
+ <input type="radio" name="P2" value="c">Bronco<br>
+</div>
+
+<div class="pregunta3">
+<p>P3.¿Quién quería ser candidata para defenderte a ti, mujer?</p>
+<input type="radio" name="P3" value="a">Josefina Vázquez Mota<br>
+<input type="radio" name="P3" value="b">Margarita Zavala<br>
+<input type="radio" name="P3" value="c">Gloria de los Ángeles Treviño<br>
+</div>
+</form>
+
+<div id="submitButton">
+<input type="submit" name="submit" value="submit" onclick="submit()">
+</div>
+</section>
+
+
+<section id="Respuestas">
+  <div class="respuesta">Respuestas Correctas<div id="Correctas"></div></div>
+    <div class="respuesta">Respuestas Incorrectas<div id="Incorrectas"></div></div>
+</section>
+
+
+
+
+
+
+  <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
